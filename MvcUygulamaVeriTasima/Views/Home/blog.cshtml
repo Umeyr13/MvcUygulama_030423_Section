@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>blog</title>
+</head>
+<body>
+    <div> 
+        @using(Html.BeginForm())
+        { 
+        <hr />
+        <b>  Ad Soyad:@Html.TextBox("text1")</b>
+        <b> Bool veri:@Html.CheckBox("kontrol") </b>
+                      @Html.DropDownList("list1")
+        @*<button> type="subit"> Gönder</button>*@
+        <input type="submit" value="Gönder"/>
+        }
+    </div>
+</body>
+</html>
