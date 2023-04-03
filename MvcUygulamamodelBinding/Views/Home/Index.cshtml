@@ -1,0 +1,51 @@
+﻿
+@using MvcUygulamamodelBinding.Models
+@model Kisi
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <b>Ad:</b>@Model.Ad
+        <br />
+        <b>Soyad:</b>@Model.Soyad
+        <br />  
+        <b>Yaş:</b>@Model.Yas
+        <b>Ad Soyad:</b> @(Model.Ad+" "+Model.Soyad)
+
+    </div>
+
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(x => x. ID)
+            <b>Ad:</b>@Html.TextBoxFor(x=>x.Ad)
+            <br />
+            <b>Soyadd:</b>@Html.TextBoxFor(x=>x.Soyad)
+            <br />
+            <b>Ad:</b>@Html.TextBoxFor(x=>x.Yas)
+            <br />
+            <input type="submit" value="Gönder"/>
+
+            //Her sayfanın bir modeli olır sadece
+
+        }
+
+
+
+
+
+
+    </div>
+</body>
+</html>

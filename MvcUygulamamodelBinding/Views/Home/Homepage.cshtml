@@ -1,0 +1,41 @@
+﻿@using MvcUygulamamodelBinding.Models.ViewModels
+@model IndexView_model
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage</title>
+</head>
+<body>
+
+
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            <b>Sehir::</b>@Model.kisiadres.sehir
+            <br />
+            <b>adres:</b>@Model.kisiadres.AdresTanim
+            <br />
+            @Html.HiddenFor(x => x.KisiTanim.ID)
+            <b>Ad:</b>@Html.TextBoxFor(x => x.KisiTanim.Ad)
+            <br />
+            <b>Soyadd:</b>@Html.TextBoxFor(x => x.KisiTanim.Soyad)
+            <br />
+            <b>Ad:</b>@Html.TextBoxFor(x => x.KisiTanim.Yas)
+            <br />
+            <input type="submit" value="Gönder" />
+
+            //Her sayfanın bir modeli olır sadece
+
+        }
+
+
+    </div>
+</body>
+</html>

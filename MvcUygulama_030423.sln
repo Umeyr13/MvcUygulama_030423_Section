@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcUygulama_030423", "MvcUy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcUygulamaVeriTasima", "MvcUygulamaVeriTasima\MvcUygulamaVeriTasima.csproj", "{9D185A92-63F0-479A-ADCD-B634DC7DFDEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcUygulamamodelBinding", "MvcUygulamamodelBinding\MvcUygulamamodelBinding.csproj", "{75AE80C0-B414-43AA-820E-00C6EF24F734}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9D185A92-63F0-479A-ADCD-B634DC7DFDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D185A92-63F0-479A-ADCD-B634DC7DFDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D185A92-63F0-479A-ADCD-B634DC7DFDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AE80C0-B414-43AA-820E-00C6EF24F734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AE80C0-B414-43AA-820E-00C6EF24F734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AE80C0-B414-43AA-820E-00C6EF24F734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AE80C0-B414-43AA-820E-00C6EF24F734}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
