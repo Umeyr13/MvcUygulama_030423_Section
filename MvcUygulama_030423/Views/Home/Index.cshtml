@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Anasayfa";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Anasayfaya Hoşgeldiniz</h2>
+<hr />
+<p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+<h4>Faydalı Linkleri Getir...</h4>
+birinci yol
+@Html.Partial("_PartialPage_FaydalıLinkler")
+ikinci yol
+@{ 
+    //ikinci yol c# kodu ile yazıldı
+    Html.RenderPartial("_PartialPage_FaydalıLinkler");
+}
+
+@section linkler{
+    <ul>
+        <li>
+            @Html.ActionLink("Blog sayfası","blog","Home")
+        </li>
+    </ul>
+    
+    }
+
+@section footer{
+    <h4> <p>Sayfa Sonu</p></h4>
+    }

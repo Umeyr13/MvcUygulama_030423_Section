@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="block">
+    LayoutPage2/ div - 1 
+</div>
+
+<div class="block">
+    @RenderBody()
+    LayoutPage2/ renderbody
+</div>
+
+<div class="block">
+    <p>Vel sapien elit in malesuada semper mi, id sollicitudin.</p>
+    <p>LayoutPage2/ div - 2 </p>
+</div>
+@section linkler{
+    <ul>
+        <li>
+            @RenderSection("section1", false)
+                
+                <p>LayoutPage2 section linkler </p>
+            </li>
+    </ul>
+}

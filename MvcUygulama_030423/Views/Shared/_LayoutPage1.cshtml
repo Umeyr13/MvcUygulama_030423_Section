@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+
+        .block{
+            display:block;
+            margin:10px;
+            border:2px solid #000000;
+            padding:10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        @RenderSection("linkler",false) 
+        laloutpage1/ linkler
+
+    </div>
+
+    <div class="block">
+        @RenderBody()
+        layoutpage1/ renderbody
+    </div>
+
+    <div class="block">
+        @RenderSection("footer",false)
+        layoutpage1/ footer
+        <hr />
+        buraya da getir...
+        @Html.Partial("../Home/_PartialPage_FaydalıLinkler")
+
+    </div>
+</body>
+</html>

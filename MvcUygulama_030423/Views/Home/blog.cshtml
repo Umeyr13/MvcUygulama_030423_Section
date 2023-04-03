@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "blog";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+
+<h2>blog</h2>
+
+@*      bunu açarsak hata verir çünkü bu sayfa layout page 2 de çalışır.
+        layout page 2 de bu linkler yok linkler layout page 1 de var. Çalışması için layout page 1 den layout page2 ye bir link yönlendirmesi yapmalıyız.
+
+        @section linkler{
+        <ul>
+            <li>
+                @Html.ActionLink("Index sayfası", "Index", "Home")
+            </li>
+        </ul>
+
+
+    }*@
+@section section1 {
+    <ul>
+        <li>
+            @Html.ActionLink("Index Sayfası", "index", "Home")
+            blog/ rendersection
+        </li>
+    </ul>
+} 
